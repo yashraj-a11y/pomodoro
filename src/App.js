@@ -1,6 +1,6 @@
 
 import './App.css';
-import NavBar from './PomoDoro/NavBar/NavBar.js'
+import NavBar from './PomoDoro/HEADER/NavBar.js'
 
 function App() {
   return (
