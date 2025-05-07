@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #ba5959;
+    color: white;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+
+
+  
+
+  .btn-icon {
+    margin-right: 5px;
+  }
+  
+  .menu-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+
+  .timer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .timer-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mode-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .mode-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.7;
+  }
+  
+  .mode-buttons button:hover {
+    opacity: 1;
+  }
+  
+  .mode-buttons button.active {
+    opacity: 1;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  .time-display {
+    font-size: 96px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: white;
+  }
+  
+  .start-button {
+    background-color: white;
+    color: #ba5959;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+  
+  .start-button:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-2px);
+  }
+  
+  .start-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .session-number {
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  .focus-text {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Task Section */
+  .tasks-section {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+  }
+  
+  .tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .tasks-header h3 {
+    font-size: 18px;
+  }
+  
+  .task-list {
+    width: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .add-task-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plus-icon {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .time-display {
+      font-size: 80px;
+    }
+    
+    .start-button {
+      padding: 10px 30px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .time-display {
+      font-size: 64px;
+    }
+    
+    .mode-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .mode-buttons button {
+      width: 100%;
+      text-align: center;
+    }
+  }
